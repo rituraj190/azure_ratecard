@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure_ratecard", "azure_ratecard\azure_ratecard.csproj", "{BA27A02F-5A16-45F6-A9F8-EA79BC500275}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86B64CC0-C9D0-4251-B48E-5E7B823C2B66}"
+	ProjectSection(SolutionItems) = preProject
+		azure_ratecard.nuspec = azure_ratecard.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TravisFile", "TravisFile", "{62D149F5-B7A1-4AE5-A19B-76BF91865B5D}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
