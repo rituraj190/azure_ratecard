@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary1
+﻿namespace azure_ratecard
 {
     using Newtonsoft.Json;
     public class ResponseData

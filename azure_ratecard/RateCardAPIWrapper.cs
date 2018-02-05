@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
 
-namespace ClassLibrary1
+namespace azure_ratecard
 {
     public class RateCardApIWrapper
     {
