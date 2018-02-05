@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-    <!-- Required elements-->
-    <id>azure_ratecard</id>
-    <version>1.0.0</version>
-    <description>It si the Library to get the usage info by azure rate card API</description>
-    <authors>{author_name}</authors>
+	<metadata>
+	<!-- Required elements-->
+	<id>azure_ratecard</id>
+	<version>1.0.0</version>
+	<description>It si the Library to get the usage info by azure rate card API</description>
+	<authors>{author_name}</authors>
 
-    <!-- Optional elements -->
-    <dependencies>
-        <dependency id="Newtonsoft.Json" version="10.0.3" />
+	<!-- Optional elements -->
+	<dependencies>
+		<dependency id="Newtonsoft.Json" version="10.0.3" />
 		<dependency id="RestSharp" version="106.2.1" />
 		<dependency id="System.ValueTuple" version="4.4.0" />
-    </dependencies>
+	</dependencies>
 
-    </metadata>
-    <!-- Optional 'files' node -->
-    <files>
-     <file src="azure_ratecard/bin/Release/azure_ratecard.dll" target="lib/net45" />
-    </files>
+	</metadata>
+	<!-- Optional 'files' node -->
+	<files>
+	 <file src="azure_ratecard/bin/Release/azure_ratecard.dll" target="lib/net45" />
+	</files>
 </package>
