@@ -17,6 +17,6 @@
     </metadata>
     <!-- Optional 'files' node -->
     <files>
-     <file src="bin/Release/azure_ratecard.dll" target="lib/net45" />
+     <file src="azure_ratecard/bin/Release/azure_ratecard.dll" target="lib/net45" />
     </files>
 </package>
