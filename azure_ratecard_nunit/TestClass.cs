@@ -15,7 +15,7 @@ namespace azure_ratecard_nunit
         public void TestMethod()
         {
             // TODO: Add your test code here
-            //RateCardApIWrapper azureRateCard = new RateCardApIWrapper();
+            //RateCardApIWrapper azureRateCard = new RateCardApIWrapper("","");
             //azureRateCard.GetToken();
             
 

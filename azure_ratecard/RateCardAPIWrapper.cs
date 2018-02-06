@@ -10,6 +10,16 @@ namespace azure_ratecard
 {
     public class RateCardApIWrapper
     {
+        private string _clientId;
+        private string _clientSecret;
+        private string _resource = "https://management.azure.com";
+
+        public RateCardApIWrapper(string clientId,string clientSecret)
+        {
+            _clientId = clientId;
+            _clientSecret = clientSecret;
+           
+        }
         private static string GetAuthCodeURL(string tanentId, string clientID, string redirectUrl, string resource)
         {
 
@@ -39,14 +49,14 @@ namespace azure_ratecard
             RestRequest restRequest = new RestRequest(Method.POST);
 
             //load settings from json file
-            string filedata = File.ReadAllText("./appsettings.json");
-            AppSettings appSettings= Newtonsoft.Json.JsonConvert.DeserializeObject <AppSettings>(filedata);
+            //string filedata = File.ReadAllText("./appsettings.json");
+            //AppSettings appSettings= Newtonsoft.Json.JsonConvert.DeserializeObject <AppSettings>(filedata);
 
 
             restRequest.AddParameter("grant_type", "client_credentials");
-            restRequest.AddParameter("client_id", appSettings.clientId);
-            restRequest.AddParameter("client_secret", appSettings.clientSecret);
-            restRequest.AddParameter("resource", appSettings.resource);
+            restRequest.AddParameter("client_id", _clientId);
+            restRequest.AddParameter("client_secret",_clientSecret);
+            restRequest.AddParameter("resource", _resource);
 
             IRestResponse response = client.Execute(restRequest);
             ResponseData responseData = Newtonsoft.Json.JsonConvert.DeserializeObject<ResponseData>(response.Content);
