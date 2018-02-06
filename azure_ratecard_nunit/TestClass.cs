@@ -17,6 +17,7 @@ namespace azure_ratecard_nunit
             // TODO: Add your test code here
             //RateCardApIWrapper azureRateCard = new RateCardApIWrapper();
             //azureRateCard.GetToken();
+            
 
             Assert.Pass("Your first passing test");
         }
