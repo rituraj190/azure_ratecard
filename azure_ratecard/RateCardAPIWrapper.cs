@@ -8,6 +8,13 @@ using RestSharp;
 
 namespace azure_ratecard
 {
+
+    public class GetInvoice
+    {
+
+        string url = "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Billing/invoices?api-version=2017-02-27-preview";
+    }
+
     public class RateCardApIWrapper
     {
         private string _clientId;
